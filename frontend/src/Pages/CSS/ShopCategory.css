@@ -1,0 +1,246 @@
+/* General Layout and Typography */
+.shop-category {
+  padding: 40px;
+  background-color: #f7f7f7;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.shop-category button {
+  width: 120px; /* Increase button width slightly for content */
+  height: 50px;
+  border-radius: 80px;
+  background: white;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex; /* Use flexbox to align content inside the button */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  gap: 8px; /* Add space between text and icon */
+  border: 1px solid #ccc; /* Optional: Add a border for visual clarity */
+}
+
+.shop-category button:hover{
+  background-color: #e0e0e0;
+}
+
+.shopcategory-sort img {
+  width: 5px;
+  height: 5px;
+  margin-bottom: 16px;
+  padding-left: 4px;
+}
+
+
+.shopcategory-indexSort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.shopcategory-sort {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.shopcategory-sort img{
+  width: 15px;
+  height: 15px;
+  margin-top: 17px;
+  margin-left: -5px;
+}
+
+/* Product Item Grid */
+.shopcategory-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 4 items per row */
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Explore More Button Styling */
+.shop-category .explore-more {
+  display: inline-block;
+  padding: 12px 30px;
+  margin: 40px auto;
+  background-color: #ff9900; /* Make the button pop with a nice color */
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+.shop-category .explore-more:hover {
+  background-color: #cc7a00; /* Darker hover state */
+  transform: translateY(-2px); /* Slight movement on hover */
+}
+
+.shop-category .explore-more:active {
+  transform: translateY(0); /* No movement on click */
+}
+
+/* Ensures proper alignment within its container */
+.shop-category {
+  text-align: center;
+}
+
+.banner{
+  width: 100%;         /* Full width of its container */
+  max-width: 1540px;   /* Limit the maximum width */
+  margin: 0 auto;      /* Center the div when it's narrower than the screen */
+  padding: 20px;       /* Padding for inner spacing */
+}
+
+
+
+/* Individual Product Card */
+.item {
+  width: 100%;
+  max-width: 250px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Aligning the product name and prices on the same level */
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensures name and pricing are aligned horizontally */
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.item-name {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+  text-align: left;
+}
+
+.item-pricing {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.item-pricing .new-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.item-pricing .old-price {
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 1280px) {
+  .shopcategory-banner{
+    margin: 20px auto;
+    width: 90%;
+  }
+  .shopcategory-indexSort{
+    width: 90%;
+    margin: auto;
+  }
+  .shopcategory-sort{
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .shopcategory-indexSort p{
+    font-size: 12px;
+  }
+  .shopcategory-products{
+    width: 90%;
+    margin: 10px auto;
+    row-gap: 40px;
+  }
+  .shopcategory-products .item{
+    margin: auto;
+  }
+  .shopcategory-loadmore{
+    margin: 100px auto;
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .shopcategory-products {
+    grid-template-columns: repeat(3, 1fr); /* Adjust to 3 items per row */
+  }
+}
+
+
+/* Add this to remove underline from all links */
+.item a {
+  text-decoration: none;
+  color: inherit; /* Maintain the color of the parent container */
+}
+
+/* You can also specify for the specific parts of the link if needed */
+.item-info .item-name,
+.item-info .item-pricing {
+  text-decoration: none;
+}
+
+/* If the hover state should also not show underline, add this */
+.item a:hover {
+  text-decoration: none;
+}
+
+@media(max-width:800px){
+  .shopcategory-banner{
+    width: 95%;
+  }
+  .shopcategory-products{
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr); /* Adjust to 2 items per row */
+  }
+  .shopcategory-loadmore{
+    margin: 60px auto;
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+  }
+  .item-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-pricing {
+    text-align: left;
+    margin-top: 5px;
+  }
+}
+@media(max-width:500px){
+  .shopcategory-products {
+    grid-template-columns: repeat(1, 1fr); /* Adjust to 1 item per row on small screens */
+  }
+}

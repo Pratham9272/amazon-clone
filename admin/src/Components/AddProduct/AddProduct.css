@@ -1,0 +1,100 @@
+/* AddProduct.css */
+.add-product {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px; /* Fixed max-width */
+  padding: 30px 50px;
+  margin: 20px auto; /* Center align the form */
+  border-radius: 6px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.addproduct-itemfield {
+  width: 100%;
+  margin-bottom: 20px; /* Added space between fields */
+}
+
+.addproduct-itemfield p {
+  color: #0f1111; /* Dark Amazon-like text */
+  font-size: 16px;
+  font-weight: 600; /* More prominent field labels */
+  margin-bottom: 5px;
+}
+
+.addproduct-itemfield input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  border-radius: 4px;
+  padding-left: 15px;
+  border: 1px solid #d5d9d9; /* Amazon-like input border */
+  outline: none;
+  color: #0f1111;
+  font-family: 'Amazon Ember', Arial, sans-serif;
+  font-size: 14px;
+  transition: border 0.2s ease-in-out;
+}
+
+.addproduct-itemfield input:focus {
+  border: 1px solid #ffa41c; /* Amazon's orange for focus state */
+}
+
+.addproduct-price {
+  display: flex;
+  gap: 20px; /* Adjusted gap */
+}
+
+.add-product-selector {
+  padding: 10px;
+  width: 120px; /* More compact */
+  height: 45px; /* Consistent with input height */
+  font-size: 14px;
+  color: #0f1111;
+  border: 1px solid #d5d9d9;
+  border-radius: 4px;
+}
+
+.addproduct-thumbnail-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 4px; /* Sharper corners like Amazon */
+  object-fit: contain;
+  margin: 10px 0px;
+  border: 1px solid #d5d9d9; /* Border around thumbnail */
+}
+
+.addproduct-btn {
+  margin-top: 20px;
+  width: 160px; /* Medium size */
+  height: 40px; /* Medium height */
+  border-radius: 4px;
+  background-color: #ffa41c; /* Amazon’s signature orange */
+  cursor: pointer;
+  color: #0f1111; /* Dark text on button */
+  font-size: 14px; /* Slightly smaller font */
+  font-weight: bold;
+  border: 1px solid #ffa41c;
+  display: block; /* Allows for centering */
+  margin-left: auto; /* Align to the right */
+  margin-right: auto; /* Align to the center */
+  transition: background-color 0.3s ease-in-out;
+  text-align: center; /* Center the button text */
+}
+
+.addproduct-btn:hover {
+  background-color: #f08804; /* Darker shade on hover */
+}
+
+
+@media (max-width: 800px) {
+  .add-product {
+    width: auto;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .addproduct-price {
+    flex-direction: column; /* Stack fields on smaller screens */
+  }
+}

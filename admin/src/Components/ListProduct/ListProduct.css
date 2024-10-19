@@ -1,0 +1,107 @@
+.list-product {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.list-product h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #232f3e; /* Amazon's header color */
+}
+
+.listproduct-format-main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: #ffffff; /* White background similar to Amazon */
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.listproduct-format-main p {
+  margin: 0;
+  font-size: 16px;
+  color: #111; /* Darker text color for better readability, similar to Amazon */
+}
+
+.listproduct-allproducts {
+  margin-top: 10px;
+}
+
+.listproduct-format {
+  border-bottom: 1px solid #ddd;
+}
+
+.listproduct-product-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.listproduct-remove-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.listproduct-remove-icon:hover {
+  transform: scale(1.1); /* Slight scaling effect for better user interaction */
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 10px 0;
+}
+
+/* Media Query for screens smaller than 800px */
+@media screen and (max-width: 800px) {
+  .listproduct-format-main {
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .listproduct-format-main img {
+    grid-column: span 1;
+  }
+
+  .listproduct-format-main p {
+    font-size: 14px;
+  }
+
+  .listproduct-remove-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .list-product h1 {
+    font-size: 20px;
+  }
+}
+
+/* Additional Styling for Amazon Clone */
+.listproduct-format-main:hover {
+  background-color: #f7f7f7; /* Add a subtle background change on hover for an Amazon-like feel */
+}
+
+button.remove-button {
+  background-color: #ff9900; /* Amazon orange button color */
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.remove-button:hover {
+  background-color: #e68a00; /* Slightly darker shade on hover */
+}

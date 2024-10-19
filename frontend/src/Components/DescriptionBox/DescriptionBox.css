@@ -1,0 +1,67 @@
+.descriptionbox {
+  margin: 50px 170px;  /* Reduced margin for a tighter look */
+  border: 1px solid #e0e0e0;  /* Adding a subtle border around the box */
+  border-radius: 8px;  /* Soft rounded corners for a modern look */
+  background-color: white;  /* Clean white background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);  /* Light shadow for depth */
+}
+
+.descriptionbox-navigator {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;  /* Divider between tabs and content */
+  background-color: #f5f5f5;  /* Light background for the tab section */
+  border-radius: 8px 8px 0 0;  /* Rounded corners only at the top */
+}
+
+.descriptionbox-nav-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  width: 171px;
+  height: 60px;  /* Reduced height for a more compact look */
+  cursor: pointer;  /* Pointer to indicate the clickable area */
+  color: #333;  /* Darker color for better readability */
+}
+
+.descriptionbox-nav-box.fade {
+  background: #fbfbfb;
+  color: #888;  /* Lighter color to indicate inactive state */
+}
+
+.descriptionbox-nav-box:hover {
+  background: #ebebeb;  /* Subtle hover effect */
+}
+
+.descriptionbox-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;  /* Reduced padding for a cleaner look */
+  font-size: 14px;
+  color: #555;  /* Lighter text color for improved readability */
+  line-height: 1.6;  /* Increased line height for better text flow */
+}
+
+.descriptionbox-description p {
+  margin: 0;
+  padding: 0;
+}
+
+.descriptionbox-description p:first-of-type {
+  font-weight: 600;  /* First paragraph bold for emphasis */
+}
+@media(max-width:1280px){
+  .descriptionbox{
+    margin: 60px;
+  }
+}
+@media(max-width:800px){
+  .descriptionbox{
+    margin: 60px 20px;
+  }
+  .descriptionbox-description{
+    font-size: 14px;
+  }
+}

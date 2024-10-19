@@ -1,0 +1,118 @@
+/* General Styling for the Footer */
+footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Footer Logo Section */
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 50px; /* Adjust as per the size of your logo */
+  margin-right: 10px;
+}
+
+.footer-logo p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.footer-links li {
+  margin: 0 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-links li:hover {
+  color: #e74c3c; /* Change to your hover color */
+}
+
+/* Footer Social Icons */
+.footer-social-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-icons-container {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer-icons-container:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Copyright Section */
+.footer-copyright {
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.footer-copyright hr {
+  margin: 20px auto;
+  width: 80%;
+  border: 1px solid #e0e0e0;
+}
+
+.footer-copyright p {
+  margin-top: -15px;
+  font-size: 0.8rem;
+}
+
+@media(max-width:800px){
+  .footer{
+    gap: 20px;
+  }
+  .footer-logo{
+    gap: 10px;
+    align-items: end;
+  }
+  .footer-logo img{
+    width: 40px;
+  }
+  .footer-links{
+    font-size: 14px;
+    gap: 10px;
+  }
+  .footer-social-icon img{
+    width: 22px;
+  }
+  .footer-copyright{
+    font-size: 13px;
+  }
+}

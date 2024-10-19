@@ -1,0 +1,29 @@
+How to run this website:
+1.Open the folder in VS code
+2.There will be 3 folder:
+     1.Admin
+     2.Backend
+     3.Frontend
+
+For each folder,right click on the folder and open it in integrated terminal
+
+For Admin, type 'npm run dev' command in terminal to run it. It will default run on port 5173.
+
+For Backend, type 'node index.js' command in terminal to run it. It will run on port 4000.
+
+For Frontend, type 'npm start' command in terminal to run it. It will run on port 3000.
+
+
+
+
+For database, goto MongoDB Atlas, log in with 'prathameshpatil9272@gmail.com'.
+There is a database created namely, amazonclone
+In database, there are 2 columns:
+	products: This has the data of all products.
+	users: This has the data of users or log in details.
+
+
+
+In Admin Panel, we can add product and remove product in the website and it also saves the product in database.
+
+

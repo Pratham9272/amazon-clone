@@ -1,0 +1,136 @@
+/* General Layout */
+.loginsignup {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #f9e1fe, #fdf2ff); /* More subtle gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.loginsignup-container {
+  width: 450px;
+  background-color: #fff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Elevate the box with shadow */
+  border-radius: 10px;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+/* Title Styling */
+.loginsignup-container h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Input Fields Styling */
+.loginsignup-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.loginsignup-fields input {
+  height: 50px;
+  width: 100%;
+  padding: 0 15px; /* Equal padding on left and right */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #5c5c5c;
+  outline: none;
+  box-sizing: border-box; /* Ensures padding is included within the width */
+  transition: border-color 0.3s ease;
+}
+
+
+.loginsignup-fields input:focus {
+  border-color: #ff9900; /* Highlight on focus */
+}
+
+/* Button Styling */
+.loginsignup-container button {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: #ff9900;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginsignup-container button:hover {
+  background-color: #e68a00; /* Button hover effect */
+}
+
+/* Link to Login */
+.loginsignup-login {
+  margin-top: 20px;
+  color: #555;
+  font-size: 16px;
+}
+
+.loginsignup-login span {
+  color: #007bff; /* Change the color to blue */
+  font-weight: 400;
+  cursor: pointer;
+}
+
+
+.loginsignup-login span:hover {
+  text-decoration: underline;
+}
+
+/* Terms of Service */
+.loginsignup-agree {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  gap: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.loginsignup-agree p {
+  margin: 0;
+}
+
+/* Checkbox Styling */
+.loginsignup-agree input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 576px) {
+  .loginsignup-container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .loginsignup-container h1 {
+    font-size: 28px;
+  }
+
+  .loginsignup-fields input {
+    height: 45px;
+    font-size: 15px;
+  }
+
+  .loginsignup-container button {
+    height: 45px;
+    font-size: 16px;
+  }
+}
